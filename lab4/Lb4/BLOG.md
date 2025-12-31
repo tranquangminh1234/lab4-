@@ -1,7 +1,7 @@
 
-## [Q1] Khám phá & Kiểm tra sức khỏe dữ liệu (Data Understanding)
+## [1[ Khám phá & Kiểm tra sức khỏe dữ liệu 
 
-[Q1] Khám phá & Kiểm tra sức khỏe dữ liệu (Data Understanding)
+[1[ Khám phá & Kiểm tra sức khỏe dữ liệu (Data Understanding)
 1. Giới thiệu bài toán
 Trong dự báo chuỗi thời gian (Time Series Forecasting), câu hỏi kinh điển luôn là: "Nên dùng một mô hình thống kê chặt chẽ như ARIMA hay một mô hình hồi quy đơn giản dựa trên đặc trưng (Feature-based Regression)?"
 1.1. Kiểm tra phạm vi thời gian (Time Range)
@@ -50,7 +50,7 @@ ADF Statistic: -19.5261
 p-value: 0.000000
 Kết luận: Vì p-value $< 0.05$, chuỗi dữ liệu PM2.5 CÓ TÍNH DỪNG (Stationary) về mặt thống kê. Mô hình ARIMA có thể bắt đầu với tham số sai phân $d=0$.
 
-## [Q2] Giải mã Mô hình Hồi quy (Regression Baseline)
+## [2[ Giải mã Mô hình Hồi quy
 Khi so sánh chỉ số sai số trên toàn bộ tập kiểm thử (Test set), kết quả cho thấy:
 2.1. Tại sao Lag 24h (Độ trễ 1 ngày) lại quan trọng nhất?
 Trong quá trình Feature Engineering, chúng tôi nhận thấy đặc trưng PM2.5_Lag24 (Nồng độ bụi tại cùng giờ ngày hôm qua) đóng vai trò quan trọng hàng đầu.
@@ -79,7 +79,7 @@ MAE: 12.52
 Tại sao RMSE lại lớn gấp đôi MAE?
 RMSE sử dụng bình phương sai số ($\text{error}^2$), nghĩa là nó "phạt" rất nặng các sai số lớn. Sự chênh lệch này chỉ ra rằng mô hình dự báo tốt ở mức trung bình, nhưng gặp sai số lớn tại các điểm dị biệt (Spikes/Outliers) - những thời điểm "bão bụi" nồng độ tăng vọt.
 
-## [Q3] Quy trình ra quyết định lựa chọn mô hình ARIMA
+## [3] Quy trình ra quyết định lựa chọn mô hình ARIMA
 
 3.1. Quan sát chuỗi gốc (Identification)
 
